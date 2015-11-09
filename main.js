@@ -15,6 +15,13 @@ function prepend(message) {
 function useAudio(mediaStream) {
 	var audio = document.querySelector('audio');
 	audio.src = window.URL.createObjectURL(mediaStream);
+	// var context = new AudioContext();
+	// prepend('Audio context set up.');
+	// var microphone = context.createMediaStreamSource(mediaStream);
+	// var gain = context.createGain();
+	// microphone.connect(gain);
+	// gain.gain.value = 0.5;
+	// gain.connect(context.destination);
 	prepend("off you go...!");
 }
 
